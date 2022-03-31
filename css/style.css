@@ -9,7 +9,25 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* COMMON */
+.ms_bg_color {
+    background-color: #363636;
+}
+
+.ms_btn {
+    padding: 8px 14px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
 /* HEADER */
+/* Header Top */
 header .header-top {
     background-color: black;
     height: 40px;
@@ -20,4 +38,18 @@ header .header-top {
 
 .header-top .sony-logo {
     width: 100px;
+}
+
+/* Header Bottom */
+.header-bottom .navbar-light .navbar-nav .nav-link {
+    color: rgb(0,0,0);
+    font-weight: 500;
+}
+
+.header-bottom .btn i {
+    font-size: 1.3rem;
+}
+
+header li {
+    margin: 0 .5rem;
 }
