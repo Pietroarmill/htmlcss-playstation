@@ -15,9 +15,17 @@ a {
     font-weight: 500;
 }
 
+a:hover {
+    color: white;
+}
+
 /* COMMON */
-.ms_bg_color {
+.ms_bg_dark {
     background-color: #363636;
+}
+
+.ms_bg_orange {
+    background-color: #cd3d0f;
 }
 
 .ms_btn {
@@ -28,6 +36,14 @@ a {
 
 /* HEADER */
 /* Header Top */
+header {
+    height: 116px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 header .header-top {
     background-color: black;
     height: 40px;
@@ -41,6 +57,10 @@ header .header-top {
 }
 
 /* Header Bottom */
+.header-bottom {
+    background-color: white;
+}
+
 .header-bottom .navbar-light .navbar-nav .nav-link {
     color: rgb(0,0,0);
     font-weight: 500;
@@ -52,4 +72,54 @@ header .header-top {
 
 header li {
     margin: 0 .5rem;
+}
+
+/* MAIN */
+/* First Banner */
+main .ms_banner {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner_content {
+    color: white;
+    width: 40%;
+    padding: 300px 0 100px;
+}
+
+.first_banner {
+    background-image: url(../img/jumbo-bg.png);
+    margin-top: 116px;
+}
+
+.first_banner_logo {
+    width: 200px;
+}
+
+/* Another Banners */
+.another_banners {
+    margin-top: 50px;
+}
+
+.another_banners_img {
+    padding: 2px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+}
+
+.banner_active {
+    border: 3px solid #0072ce;
+}
+
+.another_banners_img img {
+    border-radius: 20px;
+}
+
+/* Media Query */
+@media all and (max-width: 991px) {
+    
+    .banner_content {
+        width: auto;
+    }
+
 }
