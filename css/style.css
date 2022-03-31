@@ -4,3 +4,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+header .header-top {
+    background-color: black;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-top .sony-logo {
+    width: 100px;
+}
