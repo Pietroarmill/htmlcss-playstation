@@ -20,6 +20,10 @@ a:hover {
 }
 
 /* COMMON */
+.ms_bg_blue {
+    background-color: #2d64e6;
+}
+
 .ms_bg_dark {
     background-color: #363636;
 }
@@ -32,6 +36,15 @@ a:hover {
     padding: 8px 14px;
     border: 1px solid transparent;
     border-radius: 20px;
+}
+
+.ms_section {
+    padding: 100px 0 50px;
+}
+
+/* ACTIVE */
+.border_active {
+    border-bottom: 1px solid #2d64e6
 }
 
 /* HEADER */
@@ -96,6 +109,15 @@ main .ms_banner {
     width: 200px;
 }
 
+/* Media Query */
+@media all and (max-width: 991px) {
+    
+    .banner_content {
+        width: auto;
+    }
+
+}
+
 /* Another Banners */
 .another_banners {
     margin-top: 50px;
@@ -115,11 +137,24 @@ main .ms_banner {
     border-radius: 20px;
 }
 
-/* Media Query */
-@media all and (max-width: 991px) {
-    
-    .banner_content {
-        width: auto;
-    }
+/* Product Section */
 
+
+.product-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: .5;
+}
+
+.product-img img{
+    width: 50%;
+}
+
+.title_section {
+    text-align: center;
+}
+
+.product_active {
+    opacity: 1;
 }
