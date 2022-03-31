@@ -42,9 +42,31 @@ a:hover {
     padding: 100px 0 50px;
 }
 
+main .ms_banner{
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ms_banner .banner_logo {
+    width: 250px;
+    margin-bottom: 3rem;
+}
+
+
+main .ms_banner h2 {
+    font-size: 3rem;
+}
+
+main .ms_banner p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
 /* ACTIVE */
 .border_active {
-    border-bottom: 1px solid #2d64e6
+    border-bottom: 2px solid #2d64e6
 }
 
 /* HEADER */
@@ -55,6 +77,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
 }
 
 header .header-top {
@@ -89,13 +112,8 @@ header li {
 
 /* MAIN */
 /* First Banner */
-main .ms_banner {
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.banner_content {
-    color: white;
+.first_banner_content {
     width: 40%;
     padding: 300px 0 100px;
 }
@@ -105,14 +123,14 @@ main .ms_banner {
     margin-top: 116px;
 }
 
-.first_banner_logo {
+.banner_logo {
     width: 200px;
 }
 
 /* Media Query */
 @media all and (max-width: 991px) {
     
-    .banner_content {
+    .first_banner_content {
         width: auto;
     }
 
@@ -157,4 +175,51 @@ main .ms_banner {
 
 .product_active {
     opacity: 1;
+}
+
+/* Second Banner */
+.second_banner {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+}
+
+.second_banner_content {
+    width: 35%;
+    padding: 50px 0 100px;
+}
+
+@media all and (max-width: 991px) {
+    
+    .second_banner_content {
+        width: auto;
+    }
+
+    .ms_banner .banner_logo {
+        width: 450px;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    
+    .second_banner_content {
+        width: auto;
+    }
+
+    .ms_banner .banner_logo {
+        width: 350px;
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* New Releases */
+.new_releases {
+    color: white;
+    background-color: #1f1f1f;
+}
+
+.new_releases img {
+    border-radius: 20px;
 }
