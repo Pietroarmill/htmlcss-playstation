@@ -15,6 +15,10 @@ a {
     font-weight: 500;
 }
 
+ul {
+    list-style: none;
+}
+
 a:hover {
     color: white;
 }
@@ -252,6 +256,32 @@ header li {
         background-image: none;
     }
     
+}
+
+/* HEADER */
+footer {
+    background-color: #00439c;
+    color: white;
+}
+
+/* Footer Top */
+footer .ms_globe_logo img {    
+    width: 20px;
+}
+
+footer .ms_link_list li {
+    margin: .7rem 0;
+}
+
+/* Footer Bottom */
+.footer_bottom .sie_logo{
+    width: 150px;
+}
+
+.footer_bottom p {
+    font-weight: 500;
+    font-size: .8rem;
+    margin-top: .6rem;
 }
 
 
