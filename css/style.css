@@ -27,6 +27,10 @@ a:hover {
     color: #2d64e6;
 }
 
+.ms_color_black {
+    color: #000000;
+}
+
 /* Button */
 .ms_btn {
     padding: 8px 14px;
@@ -44,6 +48,11 @@ a:hover {
 
 .ms_btn_orange {
     background-color: #cd3d0f;
+}
+
+.ms_btn_light {
+    background-color: #d9dadc;
+    color: #2d64e6;
 }
 
 /* Sections */
@@ -64,15 +73,8 @@ a:hover {
 
 main .ms_banner{
     color: white;
-    background-position: center;
     background-repeat: no-repeat;
 }
-
-.ms_banner .banner_logo {
-    width: 250px;
-    margin-bottom: 3rem;
-}
-
 
 main .ms_banner h2 {
     font-size: 3rem;
@@ -132,29 +134,17 @@ header li {
 
 /* MAIN */
 /* First Banner */
-
-.first_banner_content {
-    width: 40%;
-    padding: 250px 0 100px;
-}
-
 .first_banner {
     background-image: url(../img/jumbo-bg.png);
     margin-top: 116px;
+    background-position: center;
 }
 
-.banner_logo {
-    width: 200px;
+.first_banner_content {
+    padding: 250px 0 100px;
 }
 
-/* Media Query */
-@media all and (max-width: 991px) {
-    
-    .first_banner_content {
-        width: auto;
-    }
 
-}
 
 /* Another Banners */
 .another_banners {
@@ -175,8 +165,10 @@ header li {
     border-radius: 20px;
 }
 
-/* Product Section */
+/* Second banner */
 
+
+/* Product Section */
 
 .product-img {
     display: flex;
@@ -201,37 +193,7 @@ header li {
 .second_banner {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
     background-size: cover;
-}
-
-.second_banner_content {
-    width: 35%;
-    padding: 50px 0 100px;
-}
-
-@media all and (max-width: 991px) {
-    
-    .second_banner_content {
-        width: auto;
-    }
-
-    .ms_banner .banner_logo {
-        width: 450px;
-        margin-bottom: 2rem;
-    }
-
-}
-
-@media all and (max-width: 767px) {
-    
-    .second_banner_content {
-        width: auto;
-    }
-
-    .ms_banner .banner_logo {
-        width: 350px;
-        margin-bottom: 2rem;
-    }
-
+    background-position: center;
 }
 
 /* New Releases */
@@ -242,4 +204,34 @@ header li {
 
 .new_releases_box img {
     border-radius: 20px;
+}
+
+/* PS4 Section */
+.ms_ps4_section span {
+    vertical-align: bottom;
+}
+
+/* Ps Plus Section */
+.third_banner {
+    background-color: #bebcbb;
+    background-position: right;
+    background-size: contain;
+    background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
+    padding: 100px 0;
+}
+
+@media all and (max-width: 991px) {
+
+    .third_banner {
+        padding: 20px 0;
+    }
+    
+}
+
+@media all and (max-width: 767px) {
+
+    .third_banner {
+        background-image: none;
+    }
+    
 }
