@@ -37,60 +37,141 @@
 
         <!-- Header Bottom -->
         <div class="header-bottom">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="img/play_logo.svg" alt=""></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms_nav_menu">
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#">
-                                Giochi <i class="fas fa-angle-down"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link dropdown-toggle" href="#">
-                                Hardware <i class="fas fa-angle-down"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#">
-                                Servizi <i class="fas fa-angle-down"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#">
-                                Novità <i class="fas fa-angle-down"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#">
-                                Fai aquisti <i class="fas fa-angle-down"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#">
-                                Supporto <i class="fas fa-angle-down"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms_nav_menu">
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#">
-                                    My PlayStation <i class="fas fa-angle-down"></i>
+                    <a class="navbar-brand" href="#"><img src="img/play_logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a 
+                                class="nav-link dropdown-toggle" 
+                                href="#" 
+                                id="navbarDropdown" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+
+                                Giochi <img class="down_arrow" src="img/chevron-down-solid.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <ul class="ms_dropdown_content_top">
+                                            <li>
+                                                <div class="ms_item_menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="img/play-menu-ico.png" alt="">
+                                                        <h5>PlayStation 5</h5>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="ms_item_menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="img/play-menu-ico.png" alt="">
+                                                        <h5>PlayStation 4</h5>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="ms_item_menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="img/play-menu-ico.png" alt="">
+                                                        <h5>PlayStation 3</h5>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>    
+                                    <hr>
+                                    <li>
+                                        <ul class="ms_dropdown_content_bottom">
+                                            <li><a href="">Link Giochi</li></a>
+                                            <li><a href="">Link Giochi</li></a>
+                                            <li><a href="">Link Giochi</li></a>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hardware <img class="down_arrow" src="img/chevron-down-solid.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servizi <img class="down_arrow" src="img/chevron-down-solid.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Novità <img class="down_arrow" src="img/chevron-down-solid.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fai acquisti <img class="down_arrow" src="img/chevron-down-solid.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Supporto <img class="down_arrow" src="img/chevron-down-solid.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My PlayStation <img class="down_arrow" src="img/chevron-down-solid.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                            </li>
+                            <li>
+                                <div class="ms_btn"><a href="" class="ms_btn ms_btn_dark">Accedi</a></div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="ms_lens" src="img/lens.svg" alt="">
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <div class="ms_btn "><a href="" class="ms_btn ms_btn_dark">Accedi</a></div>
-                            </li>
-                             
                         </ul>
-                        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                  </div>
+                    </div>
                 </div>
               </nav>
         </div>
@@ -608,5 +689,7 @@
     </footer>
     <!-- /FOOTER -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>

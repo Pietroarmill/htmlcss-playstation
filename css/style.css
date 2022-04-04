@@ -154,6 +154,66 @@ header li {
     margin: 0 .5rem;
 }
 
+header li .down_arrow {
+    width: 10px;
+    margin-left: 10px;
+}
+
+header li .ms_lens {
+    width: 25px;
+}
+
+/* NavBar */
+.dropdown-menu[data-bs-popper] {
+    top: 55px;
+    left: -90px;
+    margin-top: 0.125rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    width: 100vw;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;    
+}
+
+.ms_dropdown_content_top {
+    display: flex;
+    justify-content: center;
+}
+
+.ms_item_menu {
+    height: 180px;
+    width: 150px;
+}
+
+.ms_dropdown_content_bottom {
+    display: flex;
+    justify-content: center;
+    list-style: disc;    
+
+}
+
+.ms_dropdown_content_bottom li {
+    margin: 0 2rem;
+    padding-bottom: 10px;
+}
+
+
+.ms_dropdown_content_bottom a {
+    color: #000000;
+}
+
 /* MAIN */
 /* First Banner */
 .first_banner {
@@ -175,7 +235,7 @@ header li {
 
 .another_banners_img {
     position: relative;
-    padding: 2px;
+    padding: 3px;
     border: 3px solid transparent;
     border-radius: 23px;
 }
@@ -187,9 +247,11 @@ header li {
 .banner_active {
     border: 3px solid #0072ce;
 }
+
 /* Hover */
 .another_banners .col-6:hover .another_banners_img {
-    bottom: 40px;
+    transform: translateY(-20%);
+    transition: .5s;
 }
 
 
