@@ -41,8 +41,8 @@ a:hover {
 
 /* Button */
 .ms_btn {
-    padding: 8px 14px;
-    border: 1px solid transparent;
+    padding: 5px 10px;
+    border: 3px solid transparent;
     border-radius: 20px;
 }
 
@@ -66,6 +66,11 @@ a:hover {
 .ms_btn_light-black {
     background-color: #f5f5f5;
     color: #000000;
+}
+
+/* Hover Button */
+.ms_btn:hover {
+    opacity: .8;
 }
 
 /* Sections */
@@ -101,7 +106,7 @@ main .ms_banner p {
 
 /* ACTIVE */
 .border_active {
-    border-bottom: 2px solid #2d64e6
+    border-bottom: 2px solid #2d64e6;
 }
 
 /* HEADER */
@@ -130,6 +135,10 @@ header .header-top {
 /* Header Bottom */
 .header-bottom {
     background-color: white;
+}
+
+.dropdown-toggle::after {
+    display: none;
 }
 
 .header-bottom .navbar-light .navbar-nav .nav-link {
@@ -165,18 +174,24 @@ header li {
 }
 
 .another_banners_img {
+    position: relative;
     padding: 2px;
     border: 3px solid transparent;
+    border-radius: 23px;
+}
+
+.another_banners_img img {
     border-radius: 20px;
 }
 
 .banner_active {
     border: 3px solid #0072ce;
 }
-
-.another_banners_img img {
-    border-radius: 20px;
+/* Hover */
+.another_banners .col-6:hover .another_banners_img {
+    bottom: 40px;
 }
+
 
 /* Second banner */
 
@@ -236,6 +251,17 @@ header li {
     background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
 }
 
+/* Hover */
+.third_banner a:hover {
+    color: #2d64e6;
+}
+
+/* Discount Section */
+.discount_img:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}
+
 /* Ps Now Section */
 .fourth_banner {
     background-color: #161c3b;
@@ -258,7 +284,24 @@ header li {
     
 }
 
-/* HEADER */
+/* Social Section */
+.social_box:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.social_box:hover img{
+    border-radius: 15px;
+    transition: .1s;
+}
+
+
+/* Hover */
+.fourth_banner a:hover {
+    color: #000000;
+}
+
+/* FOOTER */
 footer {
     background-color: #00439c;
     color: white;
